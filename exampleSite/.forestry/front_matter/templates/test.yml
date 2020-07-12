@@ -1,0 +1,127 @@
+---
+label: Test
+hide_body: true
+fields:
+- type: text
+  name: baseURL
+  label: baseURL
+- type: text
+  name: title
+  label: title
+- type: text
+  name: theme
+  label: theme
+- type: text
+  name: languageName
+  label: languageName
+- type: text
+  name: languageCode
+  label: languageCode
+- type: text
+  name: paginate
+  label: paginate
+- type: text
+  name: disqusShortname
+  label: disqusShortname
+- type: field_group
+  name: outputs
+  label: outputs
+  fields:
+  - type: list
+    name: home
+    label: home
+- type: field_group
+  name: markup
+  label: markup
+  fields:
+  - type: field_group
+    name: goldmark
+    label: goldmark
+    fields:
+    - type: field_group
+      name: renderer
+      label: renderer
+      fields:
+      - type: boolean
+        name: unsafe
+        label: unsafe
+- type: field_group
+  name: params
+  label: params
+  fields:
+  - type: field_group
+    name: plugins
+    label: plugins
+    fields:
+    - type: field_group_list
+      name: css
+      label: css
+      fields:
+      - type: text
+        name: link
+        label: link
+    - type: field_group_list
+      name: js
+      label: js
+      fields:
+      - type: text
+        name: link
+        label: link
+  - type: file
+    name: logo
+    label: logo
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: author
+    label: author
+  - type: boolean
+    name: search
+    label: search
+  - type: text
+    name: contact_form_action
+    label: contact_form_action
+  - type: textarea
+    name: copyright
+    label: copyright
+  - type: field_group
+    name: preloader
+    label: preloader
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+    - type: text
+      name: preloader
+      label: preloader
+  - type: field_group_list
+    name: social
+    label: social
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: icon
+      label: icon
+    - type: text
+      name: link
+      label: link
+- type: field_group
+  name: menu
+  label: menu
+  fields:
+  - type: field_group_list
+    name: main
+    label: main
+    fields:
+    - type: text
+      name: name
+      label: name
+    - type: text
+      name: URL
+      label: URL
+    - type: number
+      name: weight
+      label: weight
